@@ -1,0 +1,184 @@
+
+/*PLANO DE FUNDO*/
+body{
+    background-image: url("../img/background\(1\).jpg");
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5); 
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1; 
+  }
+
+/*LOGO*/
+.logo img{
+    height: 61px;
+    width: auto;
+    margin: 18px 0 0 35px;
+}
+
+/*CONTAINER DO LOGIN*/
+.container{
+    background-color: rgba(0, 0, 0, 0.76);
+    color: white;
+    width: 370px;
+    height: 590px;
+    padding: 32px 40px;
+    margin: 10px auto auto auto;
+    border-radius: 5px;
+}
+
+.container h1{
+    width: 100px;
+    margin-left: 27px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI";
+    font-weight: 620;
+    font-size: 35px;
+}
+
+/*INPUT DO LOGIN*/
+.login{
+    text-align: center;
+    margin-top: 30px;
+}
+
+#email,
+#password{
+    box-sizing: border-box;
+    height: 50px;
+    width: 314px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 18px;
+    padding: 0 20px 0 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI";
+}
+
+#email::placeholder,
+#password::placeholder{
+    color: rgb(140, 140, 140);
+}
+
+.login button{
+    background-color: rgb(229, 9, 20);
+    color: white;
+    width: 314px;
+    height: 50px;
+    border-radius: 7px;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+}
+
+/*SALVAR DADOS DE LOGIN*/
+.remember-me{
+    margin: 0 20px 0 25px;
+    color: rgb(179, 179, 179);
+    font-size: 13px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI";
+}
+
+.remember-me a{
+    margin-left: 80px;
+    color: rgb(179, 179, 179);
+    text-decoration: none;
+}
+
+.remember-me a:hover{
+    text-decoration: underline;
+}
+
+/*CADASTRO*/
+.cadastro{
+    margin: 90px 20px 0 20px;
+    width: 330px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI";
+    color: rgb(140, 140, 140);
+    font-size: 15px;
+}
+
+.information{
+    font-size: 13px;
+}
+
+.information span{
+    color: rgb(0, 113, 235);
+    cursor: pointer;
+}
+
+.information span:hover{
+    text-decoration: underline;
+}
+
+.cadastro a{
+    color: white;
+    text-decoration: none;
+}
+
+.cadastro a:hover{
+    text-decoration: underline;
+}
+
+.reCAPTCHA-moreInformation{
+    width: 350px;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI";
+    color: rgb(140, 140, 140);
+    font-size: 13px;
+    margin-left: 20px;
+    display: none; /*DEIXA A INFO INVISÍVEL ATÉ SEJA CLICADO EM "SAIBA MAIS"*/
+}
+
+.reCAPTCHA-moreInformation a{
+    color: rgb(0, 113, 235);
+    text-decoration: none;
+}
+
+.reCAPTCHA-moreInformation a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.76);
+    margin-top: 80px;
+    height: 250px;
+    color: rgb(179, 179, 179);
+    padding: 10px 0 0 180px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+footer p{
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+footer a{
+    color: rgb(179, 179, 179);
+    text-decoration: none;
+    margin-right: 100px;
+    font-weight: lighter;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+.second-line{
+    margin-top: 15px;
+}
+
+.second-line a{
+    margin-right: 85px;
+}
